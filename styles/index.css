@@ -1,0 +1,46 @@
+body{
+
+    font-family: Arial;
+    background-color: black;
+    color:white;
+    margin:0;
+    padding:0;
+    height:100%;
+
+}
+
+.container-menu{
+    display: flex;
+    background-color: blue;
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container-menu2{
+    display:flex;
+    flex-direction:row;
+    margin-left:33%;
+    gap:10px;
+}
+
+.menu-item{
+    color: black;
+    background-color:lightblue;
+    padding:10px;
+    margin:10px;
+    border-radius:15px;
+    text-decoration: none;
+    transition: all 1s ease;
+}
+
+a:hover{
+    font-size:20px;
+    padding:4px 12px;
+}
+
+.t1{
+    margin-left:10px;
+    font-size:2.5rem
+}
