@@ -13,6 +13,7 @@ body{
     display: flex;
     background-color: blue;
     width: 100%;
+    height:20%;
     align-items: center;
     flex-direction: row;
     justify-content: center;
@@ -23,6 +24,7 @@ body{
     flex-direction:row;
     margin-left:33%;
     gap:10px;
+    justify-content:center;
 }
 
 .menu-item{
@@ -33,14 +35,60 @@ body{
     border-radius:15px;
     text-decoration: none;
     transition: all 1s ease;
-}
-
-a:hover{
-    font-size:20px;
-    padding:4px 12px;
+    text-align:center;
 }
 
 .t1{
     margin-left:10px;
     font-size:2.5rem
+}
+
+.slideshow {
+  position: relative;
+  width: 500px;
+  height: 350px;
+  overflow: hidden;
+  text-align: center;
+  margin-left:30%;
+  margin-top:10%;
+}
+
+.slide {
+  position: absolute;
+  inset: 0; 
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  animation: fade 12s infinite;
+}
+
+.slide:nth-child(1) { animation-delay: 0s; }
+.slide:nth-child(2) { animation-delay: 4s; }
+.slide:nth-child(3) { animation-delay: 8s; }
+
+@keyframes fade {
+  0%   { opacity: 0; }
+  10%  { opacity: 1; }
+  30%  { opacity: 1; }
+  40%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.rodape{
+    background-color:rgba(101, 162, 179, 1);
+    color:black;
+    padding:10px;
+    text-align:center;
+    margin-top:40%;
+}
+
+.saibamais{
+    color:blue;
+    text-decoration:none;
+}
+
+.slogan{
+    margin-left:10%;
+    font-size:1.2rem;
+    color:rgba(33, 76, 194, 1);
 }
