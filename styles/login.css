@@ -1,54 +1,98 @@
 :root{
     --preto: #000;
     --azul-claro: lightblue;
+    --branco: white;
+    --azul-diferente:  #1E90FF;
+    --azul: blue;
+    --preto-diferente: rgba(0,0,0,0.2);
 }
 
 body{
     font-family: 'Arial' , sans-serif;
     margin: 0;
     height: 100vh;
+    font-size: 1.5rem;
+    background-image: url("../imgs/img4.webp");
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    font-size: 1.5rem;
-    background-image: url("../imgs/img4.webp");
+    text-align:center;
 }
 
 .container-principal{
-
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    box-shadow: 4px;
-    gap: 10px;
-    margin-right: 50%;
+    align-items: center;
+    gap: 15px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: var(--branco);
+    box-shadow: 0px 4px 10px var(--preto-diferente);
+    width: 350px; 
 }
 
 .barra{
+    width: 100%; 
     border-radius: 10px;
-    font-size: 35px;
-    border: var(--preto);
-    padding:15px;
+    font-size: 20px;
+    border: 1px solid var(--azul-diferente);
+    padding: 12px;
     color:var(--preto);
 }
 
 .barra:focus{
     outline:none;
-    border: 1px solid var(--preto);
+    border: 2px solid var(--azul-diferente);
 }
 
 .entrar{
-    padding:10px;
+    width: 100%;
+    padding:12px;
     border-radius:10px;
     font-size:20px;
     color:var(--azul-claro);
     background-color:var(--preto);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.entrar:hover{
+    background-color: var(--azul-diferente);
+    color: var(--branco);
 }
 
 input::placeholder{
     color:var(--preto);
-    opacity:2;
+    opacity:0.8;
 }
 
+.apoio{
+    text-decoration: none;
+    color: var(--azul-diferente);
+}
+
+h1{
+    color: var(--azul);
+}
+
+.text_apoio{
+    font-size: 1.3rem;
+}
+
+.entrar_botoes{
+    padding:10px;
+    border-radius:10px;
+    border: 1px solid var(--azul-diferente);
+    font-size: 20px;
+    background-color: var(--branco);
+    color: var(--preto);
+}
+
+.entrar_metodos{
+    display:flex;
+    gap: 10px;
+    width:100%;
+    justify-content: center;
+}
