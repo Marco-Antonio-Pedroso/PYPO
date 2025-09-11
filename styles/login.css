@@ -5,6 +5,7 @@
     --azul-diferente:  #1E90FF;
     --azul: blue;
     --preto-diferente: rgba(0,0,0,0.2);
+    --azul-fundo: rgb(24, 88, 151);
 }
 
 body{
@@ -12,13 +13,19 @@ body{
     margin: 0;
     height: 100vh;
     font-size: 1.5rem;
-    background-image: url("../imgs/img4.webp");
+    background-color: var(--azul-fundo);
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.principal{
+    display: flex;
+    flex-direction: row-reverse;
+    gap:10rem
 }
 
 .container-principal{
@@ -53,7 +60,7 @@ body{
     border-radius:10px;
     font-size:20px;
     color:var(--azul-claro);
-    background-color:var(--preto);
+    background-color: rgb(36, 49, 122);
     cursor: pointer;
     transition: 0.3s;
     text-decoration: none;
@@ -75,7 +82,10 @@ input::placeholder{
 }
 
 h1{
-    color: var(--azul);
+    color: darkblue;
+    font-family: "Bitcount Grid Double", sans-serif;
+    font-weight: 350;
+    font-size:4rem;
 }
 
 .text_apoio{

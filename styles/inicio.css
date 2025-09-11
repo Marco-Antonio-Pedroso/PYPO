@@ -1,9 +1,9 @@
 :root{
---cor-de-fundo: #000;
+--cor-de-fundo: rgb(10, 51, 92);
 --branco: #999;
---cor-de-fundo-caixa:rgb(15, 43, 138);
+--cor-de-fundo-caixa:rgb(21, 80, 139,100);;
 --cor-titulo: blue;
---azul-diferente:  #1E90FF;
+--azul-diferente:rgb(2, 129, 255);
 --preto-moderno: #696969;
 }
 
@@ -46,11 +46,10 @@ body{
 }
 
 .link1{
+    color:var(--azul-diferente);
     text-decoration: none;
-    background-color: var(--azul-diferente);
     padding:8px;
     border-radius: 10px;
-    color: var(--cor-de-fundo-caixa);
 }
 
 .container-header{
@@ -64,8 +63,9 @@ body{
 }
 
 .texto-header{
-    color: var(--cor-titulo);
-    font-size: 2rem;
+    color: var(--azul-diferente);
+    font-size: 2.5rem;
+
 }
 
 .parte2{
