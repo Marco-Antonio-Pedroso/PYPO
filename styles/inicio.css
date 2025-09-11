@@ -1,7 +1,7 @@
 :root{
 --cor-de-fundo: #000;
 --branco: #999;
---cor-de-fundo-caixa: #0a0f1f;
+--cor-de-fundo-caixa:rgb(15, 43, 138);
 --cor-titulo: blue;
 --azul-diferente:  #1E90FF;
 --preto-moderno: #696969;
@@ -9,6 +9,7 @@
 
 body{
     font-family: Arial, sans-serif;
+    font-weight: bold;
     height: 100vh;
     margin: 0;
     font-size: 1.5rem;
@@ -58,8 +59,8 @@ body{
     justify-content: space-around;
 }
 
-.icons-header{
-    background-color: var(--preto-moderno);
+.icon{
+    background-color: var(--cor-de-fundo-fundo);
 }
 
 .texto-header{
@@ -84,7 +85,9 @@ body{
 
 .img2{
     border-radius: 8px;
-    height: 275px;
+    height: 200px;
+    vertical-align: middle;
+    text-align: center;
 }
 
 .txt-a{
@@ -108,9 +111,11 @@ body{
 }
 
 .img3{
-    widtg: 300px;
-    height: 250px;
+    width: 300px;
+    height: 200px;
     border-radius: 10px;
+    vertical-align: middle;
+    text-align: center;
 }
 
 a{
@@ -118,11 +123,11 @@ a{
 }
 
 .rodape {
-  background-color: var(--cor-de-fundo-caixa);
   text-align: center;
   padding-top: 10px;  
   padding-bottom: 20px; 
-  margin-top: 40px
+  margin-top: 40px;
+  font-size: 1.1rem;
 }
 
 .linha {
@@ -131,3 +136,30 @@ a{
   background-color: gray;
   margin-bottom: 10px; 
 }
+
+.fa-solid{
+    background-color: var(--cor-de-fundo-caixa);
+    padding:10px;
+
+}
+
+.container-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 15px;
+    margin-left: 175px;
+}
+
+.txt-rodape{
+    background-color: var(--cor-de-fundo-caixa);
+    padding: 40px;
+}
+
+.rodape-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
